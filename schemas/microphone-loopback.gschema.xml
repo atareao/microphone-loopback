@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="microphone-loopback@atareao.es">
+    <schema path="/es/atareao/microphone-loopback/" id="es.atareao.microphone-loopback">
+        <key name="latency" type="i" >
+            <default>1</default>
+            <summary>Latency in milliseconds</summary>
+            <description>Set the latency for microphone loopback</description>
+        </key>
+        <key name="loopback" type="b">
+            <default>false</default>
+            <summary>Loopback</summary>
+            <description>Enable and disable de loopback for the microphone</description>
+        </key>
+    </schema>
+</schemalist>

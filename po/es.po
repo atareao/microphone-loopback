@@ -1,0 +1,202 @@
+# Spanish translations for WordReference Search Provider package.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the WordReference Search Provider package.
+# Lorenzo <lorenzo.carbonell.cerezo@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WordReference Search Provider - 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-08 21:24+0200\n"
+"PO-Revision-Date: 2018-06-02 19:46+0200\n"
+"Last-Translator: Lorenzo <lorenzo.carbonell.cerezo@gmail.com>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: schemas/microphone-loopback.gschema.xml:6
+msgid "Latency in milliseconds"
+msgstr "Latencia en milisegundos"
+
+#: schemas/microphone-loopback.gschema.xml:7
+msgid "Set the latency for microphone loopback"
+msgstr "Configura la latencia para el micro"
+
+#: schemas/microphone-loopback.gschema.xml:11
+msgid "Loopback"
+msgstr "Loopback"
+
+#: schemas/microphone-loopback.gschema.xml:12
+msgid "Enable and disable de loopback for the microphone"
+msgstr "Habilita o deshabilita el loopback para el micro"
+
+#: extension.js:85
+msgid "Touchpad status"
+msgstr ""
+
+#: extension.js:87 extension.js:126
+msgid "Enable microphone loopback"
+msgstr "Habilita el loopback"
+
+#: extension.js:96
+msgid "Settings"
+msgstr "Configuración"
+
+#: extension.js:117
+msgid "Disable microphone loopback"
+msgstr "Deshabilita el loopback"
+
+#: extension.js:119
+msgid "Microphone loopback enabled"
+msgstr "Loopback habilitado"
+
+#: extension.js:128
+msgid "Microphone loopback disabled"
+msgstr "Loopback deshabilitado"
+
+#: extension.js:142
+msgid "Help"
+msgstr "Ayuda"
+
+#: extension.js:144
+msgid "Project Page"
+msgstr "Página del proyecto"
+
+#: extension.js:146
+msgid "Get help online..."
+msgstr "Ayuda en línea..."
+
+#: extension.js:148
+msgid "Translate this application..."
+msgstr "Traduce la aplicación..."
+
+#: extension.js:150
+msgid "Report a bug..."
+msgstr "Informa de un error..."
+
+#: extension.js:153
+msgid "El atareao"
+msgstr "El atareao"
+
+#: extension.js:155
+msgid "Follow me in Twitter"
+msgstr "Sígueme en Twitter"
+
+#: extension.js:157
+msgid "Follow me in Facebook"
+msgstr "Sígueme en Facebook"
+
+#: extension.js:159
+msgid "Follow me in Google+"
+msgstr "Sígueme en Google+"
+
+#: preferenceswidget.js:169
+msgid "Nothing"
+msgstr "Nada"
+
+#: preferenceswidget.js:182
+msgid "True"
+msgstr "Cierto"
+
+#: preferenceswidget.js:195
+msgid "False"
+msgstr "Falso"
+
+#: prefs.js:61
+msgid "Microphone loopback"
+msgstr "Loopback del micrófono"
+
+#: prefs.js:66
+msgid "Version: "
+msgstr "Versión: "
+
+#: prefs.js:77
+msgid "Atareao"
+msgstr "Atareao"
+
+#: prefs.js:84
+msgid "Copyright © 2018 Lorenzo Carbonell"
+msgstr "Copyright © 2018 Lorenzo Carbonell"
+
+#: prefs.js:91
+msgid "This program is free software: you can redistribute it and/or modify"
+msgstr "Este programa es software libre: puede redistribuirlo y/o modificarlo"
+
+#: prefs.js:92
+msgid "it under the terms of the GNU General Public License as published by"
+msgstr ""
+"bajo los términos de la Licencia General Pública de GNU publicada por la"
+
+#: prefs.js:93
+msgid "the Free Software Foundation, either version 3 of the License, or"
+msgstr "Free Software Foundation, ya sea la versión 3 de la Licencia, o"
+
+#: prefs.js:94
+msgid "(at your option) any later version."
+msgstr "(a su elección) cualquier versión posterior."
+
+#: prefs.js:95
+msgid "This program is distributed in the hope that it will be useful,"
+msgstr "Este programa se distribuye con la esperanza de que sea útil,"
+
+#: prefs.js:96
+msgid "but WITHOUT ANY WARRANTY; without even the implied warranty of"
+msgstr "pero SIN NINGUNA GARANTÍA; incluso sin la garantía implícita de"
+
+#: prefs.js:97
+msgid "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
+msgstr "MERCANTIBILIDAD o CALIFICADA PARA UN PROPÓSITO EN PARTICULAR. Vea la"
+
+#: prefs.js:98
+msgid "GNU General Public License for more details."
+msgstr "Licencia General Pública de GNU para más detalles."
+
+#: prefs.js:99
+msgid "You should have received a copy of the GNU General Public License"
+msgstr ""
+"Usted ha debido de recibir una copia de la Licencia General Pública de GNU"
+
+#: prefs.js:100
+msgid ""
+"along with this program.  If not, see <a href=\"https://www.gnu.org/licenses/"
+"\">https://www.gnu.org/licenses/</a>."
+msgstr ""
+"junto con este programa. Si no, vea <a href=\"https://www.gnu.org/licenses/"
+"\">https://www.gnu.org/licenses/</a>."
+
+#: prefs.js:117
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: prefs.js:121
+msgid "Select latency"
+msgstr "Elige la latencia"
+
+#: prefs.js:128
+msgid "About"
+msgstr "Acerca de..."
+
+#~ msgid "Dictionary"
+#~ msgstr "Diccionario"
+
+#~ msgid "Synonyms"
+#~ msgstr "Sinónimos"
+
+#~ msgid "WordReference"
+#~ msgstr "WordReference"
+
+#~ msgid "Loading items from WordReference, please wait..."
+#~ msgstr "Cargando definiciones de WordReference, por favor espera..."
+
+#~ msgid "Oops, an error occurred while searching."
+#~ msgstr "Ups!, ha sucedido un error..."
+
+#, fuzzy
+#~ msgid "WordReference Search Provider"
+#~ msgstr "WordReference Search Provider"
+
+#~ msgid "Select dictionaries"
+#~ msgstr "Elige diccionarios"
