@@ -1,13 +1,11 @@
 /*
- * WordReference Search Provider
- * An extension to search definitions and synonyms in WordReference
- * with GNOME Shell
+ * microphone-loopback@atareao.es
+ * This extension enables hear microphone on headphones or speakers
  *
  * Copyright (C) 2018
  *     Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>,
- * https://www.atareao.es
  *
- * This file is part of WordReference Search Provider
+ * This file is microphone-loopback@atareao.es
  * 
  * WordReference Search Provider is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +20,7 @@
  * You should have received a copy of the GNU General Public License
  * along with gnome-shell-extension-openweather.
  * If not, see <http://www.gnu.org/licenses/>.
-  */
+ */
  
  const Lang = imports.lang;
 

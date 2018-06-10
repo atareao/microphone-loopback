@@ -1,12 +1,11 @@
 /*
- * Power Commands
- * This a extension with some useful commands
- * with GNOME Shell
+ * microphone-loopback@atareao.es
+ * This extension enables hear microphone on headphones or speakers
  *
  * Copyright (C) 2018
  *     Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>,
  *
- * This file is part of Power Commands.
+ * This file is microphone-loopback@atareao.es
  * 
  * WordReference Search Provider is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +20,6 @@
  * You should have received a copy of the GNU General Public License
  * along with gnome-shell-extension-openweather.
  * If not, see <http://www.gnu.org/licenses/>.
- *
  */
 
 imports.gi.versions.St = "1.0";
@@ -99,6 +97,7 @@ class MicrophoneLoopback extends PanelMenu.Button{
         this.menu.addMenuItem(this.settingsMenuItem);
         this.menu.addMenuItem(this._get_help());
 
+        this._loopback = -1;
         this._toggleLoopback();
     }
 
@@ -107,23 +106,28 @@ class MicrophoneLoopback extends PanelMenu.Button{
         log('ALDA', loopback);
         let latency = this._settings.get_int('latency');
         if(loopback){
-            GLib.spawn_command_line_async(
-                "pactl load-module module-loopback latency_msec=" + latency
-            );
-            this.icon.set_icon_name('mic-on');
-            this.microphoneLoopbackSwitch.label.set_text(_('Disable microphone loopback'));
-            notify('Microphone Loopback',
-                   _('Microphone loopback enabled'),
-                   'microphone-loopback');
+            if(this._loopback == -1){
+                let [res, out, err, status] = GLib.spawn_command_line_sync(
+                    "pactl load-module module-loopback latency_msec=" + latency);
+                this._loopback = parseInt(out);
+                this.icon.set_icon_name('mic-on');
+                this.microphoneLoopbackSwitch.label.set_text(_('Disable microphone loopback'));
+                notify('Microphone Loopback',
+                       _('Microphone loopback enabled'),
+                       'microphone-loopback');
+            }
         }else{
-            GLib.spawn_command_line_async(
-                "pactl unload-module module-loopback"
-            );
-            this.icon.set_icon_name('mic-off');
-            this.microphoneLoopbackSwitch.label.set_text(_('Enable microphone loopback'));
-            notify('Microphone Loopback',
-                   _('Microphone loopback disabled'),
-                   'microphone-loopback');
+            if(this._loopback > -1){
+                GLib.spawn_command_line_async(
+                    "pactl unload-module " + this._loopback
+                );
+                this._loopback = -1;
+                this.icon.set_icon_name('mic-off');
+                this.microphoneLoopbackSwitch.label.set_text(_('Enable microphone loopback'));
+                notify('Microphone Loopback',
+                       _('Microphone loopback disabled'),
+                       'microphone-loopback');
+            }
         }
     }
 

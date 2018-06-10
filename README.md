@@ -1,8 +1,10 @@
 ## Microphone Loopback for GNOME Shell
 
-This is an extension for GNOME Shell to hear the microphone in speakers or headphones.
+This extension enables hear microphone on headphones or speakers.
 
 ## HOWTO
+
+One time microphone-loopback is installed and enabled, you can hear the microphone on headphones or speakers
 
 ### Install
 
