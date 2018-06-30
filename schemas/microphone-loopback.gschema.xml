@@ -9,7 +9,12 @@
         <key name="loopback" type="b">
             <default>false</default>
             <summary>Loopback</summary>
-            <description>Enable and disable de loopback for the microphone</description>
+            <description>Enable and disable the loopback for the microphone</description>
+        </key>
+        <key name="notifications" type="b">
+            <default>false</default>
+            <summary>Show notifications</summary>
+            <description>On enable show notifications when enable or disable loopback for the microphone</description>
         </key>
     </schema>
 </schemalist>

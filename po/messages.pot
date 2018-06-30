@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-08 21:24+0200\n"
+"POT-Creation-Date: 2018-06-30 19:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,147 +30,153 @@ msgid "Loopback"
 msgstr ""
 
 #: schemas/microphone-loopback.gschema.xml:12
-msgid "Enable and disable de loopback for the microphone"
+msgid "Enable and disable the loopback for the microphone"
 msgstr ""
 
-#: extension.js:85
+#: schemas/microphone-loopback.gschema.xml:16
+msgid "Show notifications"
+msgstr ""
+
+#: schemas/microphone-loopback.gschema.xml:17
+msgid ""
+"On enable show notifications when enable or disable loopback for the "
+"microphone"
+msgstr ""
+
+#: extension.js:83
 msgid "Touchpad status"
 msgstr ""
 
-#: extension.js:87 extension.js:126
+#: extension.js:85 extension.js:128
 msgid "Enable microphone loopback"
 msgstr ""
 
-#: extension.js:96
+#: extension.js:91
 msgid "Settings"
 msgstr ""
 
-#: extension.js:117
+#: extension.js:114
 msgid "Disable microphone loopback"
 msgstr ""
 
-#: extension.js:119
+#: extension.js:117
 msgid "Microphone loopback enabled"
 msgstr ""
 
-#: extension.js:128
+#: extension.js:131
 msgid "Microphone loopback disabled"
 msgstr ""
 
-#: extension.js:142
+#: extension.js:147
 msgid "Help"
 msgstr ""
 
-#: extension.js:144
+#: extension.js:149
 msgid "Project Page"
 msgstr ""
 
-#: extension.js:146
+#: extension.js:151
 msgid "Get help online..."
 msgstr ""
 
-#: extension.js:148
-msgid "Translate this application..."
-msgstr ""
-
-#: extension.js:150
+#: extension.js:153
 msgid "Report a bug..."
 msgstr ""
 
-#: extension.js:153
+#: extension.js:156
 msgid "El atareao"
 msgstr ""
 
-#: extension.js:155
+#: extension.js:158
 msgid "Follow me in Twitter"
 msgstr ""
 
-#: extension.js:157
+#: extension.js:160
 msgid "Follow me in Facebook"
 msgstr ""
 
-#: extension.js:159
+#: extension.js:162
 msgid "Follow me in Google+"
 msgstr ""
 
-#: preferenceswidget.js:169
+#: preferenceswidget.js:167
 msgid "Nothing"
 msgstr ""
 
-#: preferenceswidget.js:182
+#: preferenceswidget.js:180
 msgid "True"
 msgstr ""
 
-#: preferenceswidget.js:195
+#: preferenceswidget.js:193
 msgid "False"
 msgstr ""
 
-#: prefs.js:61
+#: prefs.js:59
 msgid "Microphone loopback"
 msgstr ""
 
-#: prefs.js:66
+#: prefs.js:64
 msgid "Version: "
 msgstr ""
 
-#: prefs.js:77
+#: prefs.js:75
 msgid "Atareao"
 msgstr ""
 
-#: prefs.js:84
+#: prefs.js:82
 msgid "Copyright © 2018 Lorenzo Carbonell"
 msgstr ""
 
-#: prefs.js:91
+#: prefs.js:89
 msgid "This program is free software: you can redistribute it and/or modify"
 msgstr ""
 
-#: prefs.js:92
+#: prefs.js:90
 msgid "it under the terms of the GNU General Public License as published by"
 msgstr ""
 
-#: prefs.js:93
+#: prefs.js:91
 msgid "the Free Software Foundation, either version 3 of the License, or"
 msgstr ""
 
-#: prefs.js:94
+#: prefs.js:92
 msgid "(at your option) any later version."
 msgstr ""
 
-#: prefs.js:95
+#: prefs.js:93
 msgid "This program is distributed in the hope that it will be useful,"
 msgstr ""
 
-#: prefs.js:96
+#: prefs.js:94
 msgid "but WITHOUT ANY WARRANTY; without even the implied warranty of"
 msgstr ""
 
-#: prefs.js:97
+#: prefs.js:95
 msgid "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
 msgstr ""
 
-#: prefs.js:98
+#: prefs.js:96
 msgid "GNU General Public License for more details."
 msgstr ""
 
-#: prefs.js:99
+#: prefs.js:97
 msgid "You should have received a copy of the GNU General Public License"
 msgstr ""
 
-#: prefs.js:100
+#: prefs.js:98
 msgid ""
 "along with this program.  If not, see <a href=\"https://www.gnu.org/licenses/"
 "\">https://www.gnu.org/licenses/</a>."
 msgstr ""
 
-#: prefs.js:117
+#: prefs.js:115
 msgid "Preferences"
 msgstr ""
 
-#: prefs.js:121
+#: prefs.js:119
 msgid "Select latency"
 msgstr ""
 
-#: prefs.js:128
+#: prefs.js:126
 msgid "About"
 msgstr ""

@@ -112,9 +112,11 @@ class MicrophoneLoopback extends PanelMenu.Button{
                 this._loopback = parseInt(out);
                 this.icon.set_icon_name('mic-on');
                 this.microphoneLoopbackSwitch.label.set_text(_('Disable microphone loopback'));
-                notify('Microphone Loopback',
-                       _('Microphone loopback enabled'),
-                       'microphone-loopback');
+                if(this._settings.get_boolean('notifications')){
+                    notify('Microphone Loopback',
+                           _('Microphone loopback enabled'),
+                           'microphone-loopback');
+                }
             }
         }else{
             if(this._loopback > -1){
@@ -124,9 +126,11 @@ class MicrophoneLoopback extends PanelMenu.Button{
                 this._loopback = -1;
                 this.icon.set_icon_name('mic-off');
                 this.microphoneLoopbackSwitch.label.set_text(_('Enable microphone loopback'));
-                notify('Microphone Loopback',
-                       _('Microphone loopback disabled'),
-                       'microphone-loopback');
+                if(this._settings.get_boolean('notifications')){
+                    notify('Microphone Loopback',
+                           _('Microphone loopback disabled'),
+                           'microphone-loopback');
+                }
             }
         }
     }

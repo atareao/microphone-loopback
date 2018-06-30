@@ -119,6 +119,7 @@ class MicrophoneLoopbackPreferencesWidget extends PreferencesWidget.Stack{
         let appearanceSection = preferencesPage.addSection(_("Select latency"), null, {});
         appearanceSection.addGSetting(settings, "latency");
         appearanceSection.addGSetting(settings, "loopback");
+        appearanceSection.addGSetting(settings, "notifications");
 
         // About Page
         let aboutPage = this.addPage(

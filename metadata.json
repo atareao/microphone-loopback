@@ -9,5 +9,5 @@
     "uuid": "microphone-loopback@atareao.es",
     "gettext-domain": "microphone-loopback@atareao.es", 
     "settings-schema": "es.atareao.microphone-loopback",
-    "version": 1
+    "version": 2
 }
