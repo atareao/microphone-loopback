@@ -60,7 +60,7 @@ function compress()
     if [ -f $file ];then
         rm $file
     fi
-    zip -r --exclude=*.git* $file *
+    zip -r --exclude=*.git* --exclude=helper.sh $file *
 }
 
 function usage()
