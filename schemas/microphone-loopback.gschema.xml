@@ -14,7 +14,7 @@
         <key name="notifications" type="b">
             <default>false</default>
             <summary>Show notifications</summary>
-            <description>On enable show notifications whenenable or disable loopback for the microphone</description>
+            <description>On enable show notifications when enable or disable loopback for the microphone</description>
         </key>
     </schema>
 </schemalist>

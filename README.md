@@ -8,7 +8,7 @@ One time microphone-loopback is installed and enabled, you can hear the micropho
 
 ### Install
 
-* ```git clone https://github.com/atareao/microphone-loopback.git ~/.local/share/gnome-shell/microphone-loopback@atareao.es```
+* ```git clone https://github.com/atareao/microphone-loopback.git ~/.local/share/gnome-shell/extensions/microphone-loopback@atareao.es```
 * Hit ```<Alt> + F2``` and type ```r``` and hit ```<Enter>```
 * Enable the extension in ```gnome-tweak-tool```
 * Configure latency in milliseconds
