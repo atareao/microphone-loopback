@@ -23,7 +23,7 @@
  */
 
 
-const {St, Clutter, Gtk, Gio, GObjetct, GLib} = imports.gi;
+const {St, Clutter, Gtk, Gio, GObject, GLib} = imports.gi;
 
 const MessageTray = imports.ui.messageTray;
 const Main = imports.ui.main;
@@ -49,7 +49,6 @@ function notify(msg, details, icon='microphone-loopback') {
 var MicrophoneLoopback = GObject.registerClass(
     class MicrophoneLoopback extends PanelMenu.Button{
         _init(){
-            super(St.Align.START);
             this._settings = ExtensionUtils.getSettings();
             this._loadPreferences();
 
