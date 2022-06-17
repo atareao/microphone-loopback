@@ -4,7 +4,7 @@
    viewBox="0 0 26 26"
    version="1.1"
    id="svg22"
-   sodipodi:docname="microphone-loopback-active-light.svg"
+   sodipodi:docname="microphone-loopback-active-dark.svg"
    width="26"
    height="26"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
@@ -84,7 +84,7 @@
   <g
      id="g838"
      transform="matrix(0.0625096,0,0,0.0625096,-11.549039,-12.56893)"
-     style="fill:#3c3c3c;fill-opacity:1">
+     style="fill:#dfdbd3;fill-opacity:1">
     <rect
        transform="scale(-1,1)"
        x="-455.21729"
@@ -94,11 +94,11 @@
        rx="62.488998"
        ry="62.488998"
        id="rect16"
-       style="fill:#3c3c3c;fill-opacity:1" />
+       style="fill:#dfdbd3;fill-opacity:1" />
     <path
        d="m 310.6473,353.15955 v 75.047 a 82.078,82.078 0 0 0 82.078,82.078 82.078,82.078 0 0 0 82.078,-82.078 v -75.047 h 24.922 v 76.563 a 107.01,107.01 0 0 1 -94.539,106.27 v 40.096 h 50.028 v 24.922 h -124.98 v -24.922 h 50.028 v -40.096 a 107.01,107.01 0 0 1 -94.539,-106.27 v -76.563 z"
        id="path18"
        inkscape:connector-curvature="0"
-       style="fill:#3c3c3c;fill-opacity:1" />
+       style="fill:#dfdbd3;fill-opacity:1" />
   </g>
 </svg>

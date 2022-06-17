@@ -31,13 +31,14 @@ const AboutPage = Extension.imports.aboutpage.AboutPage;
 const Gettext = imports.gettext.domain(Extension.uuid);
 const _ = Gettext.gettext;
 
+const DialogWidgets = Extension.imports.dialogwidgets;
 
 function init() {
     ExtensionUtils.initTranslations();
 }
 
 var MicrophoneLoopbackPreferencesWidget = GObject.registerClass(
-    class MicrophoneLoopbackPreferencesWidget extends PreferencesWidget.Stack{
+    class MicrophoneLoopbackPreferencesWidget extends Widgets.ListWithStack{
         _init(){
             super._init();
 
@@ -49,11 +50,16 @@ var MicrophoneLoopbackPreferencesWidget = GObject.registerClass(
                 _("Indicator options"));
 
             indicatorSection.addGSetting(settings, "latency");
-            indicatorSection.addGSetting(settings, "loopback");
+            indicatorSection.addGSetting(settings, "notifications");
 
-            this.add(_("Microphone Loobak Preferences"),
+            const themePage = new Widgets.Page();
+            const styleSection = themePage.addFrame(_("Theme"));
+            styleSection.addGSetting(settings, "darktheme");
+
+            this.add(_("Microphone Loopbak Preferences"),
                      "preferences-other-symbolic",
                      preferencesPage);
+            this.add(_("Style"), "style", themePage);
             this.add(_("About"), "help-about-symbolic", new AboutPage());
         }
     }

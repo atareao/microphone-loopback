@@ -6,11 +6,6 @@
             <summary>Latency in milliseconds</summary>
             <description>Set the latency for microphone loopback</description>
         </key>
-        <key name="loopback" type="b">
-            <default>false</default>
-            <summary>Loopback</summary>
-            <description>Enable and disable the loopback for the microphone</description>
-        </key>
         <key name="notifications" type="b">
             <default>false</default>
             <summary>Show notifications</summary>

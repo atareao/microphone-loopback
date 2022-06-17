@@ -38,12 +38,12 @@ const _ = Gettext.gettext;
 
 var button;
 
-function notify(msg, details, icon='microphone-loopback') {
-    let source = new MessageTray.Source(Extension.uuid, icon);
+function notify(msg, details) {
+    let source = new MessageTray.Source(Extension.uuid, 'help-info-symbolic');
     Main.messageTray.add(source);
     let notification = new MessageTray.Notification(source, msg, details);
     notification.setTransient(true);
-    source.notify(notification);
+    source.showNotification(notification);
 }
 
 var MicrophoneLoopback = GObject.registerClass(
@@ -62,7 +62,7 @@ var MicrophoneLoopback = GObject.registerClass(
                                                                     {active: true})
             this.microphoneLoopbackSwitch.label.set_text(_('Enable microphone loopback'));
             this.microphoneLoopbackSwitch.connect('toggled', (widget, value) => {
-                this._toggleLoopback(value);
+                this._toggleSwitch(widget, value);
             });
             this.menu.addMenuItem(this.microphoneLoopbackSwitch)
 
@@ -85,38 +85,67 @@ var MicrophoneLoopback = GObject.registerClass(
         _loadPreferences(){
             this._darktheme = this._getValue('darktheme');
             this._latency = this._getValue('latency');
-            this._reload();
+            this._notifications = this._getValue('notifications')
+            this._update();
         }
 
-        _reload(){
-            GLib.spawn_command_line_sync("pactl unload-module module-loopback");
-            if(this.microphoneLoopbackSwitch._switch.state){
-                GLib.spawn_command_line_sync(
-                    `pactl load-module module-loopback latency_msec=${this._latency}`);
+        _toggleSwitch(widget, value){
+            try{
+                let command;
+                if(value == true){
+                    command = ['pactl', 'load-module', 'module-loopback', `latency_msec=${this._latency}`];
+                }else{
+                    command = ['pactl', 'unload-module', 'module-loopback'];
+                }
+                let proc = Gio.Subprocess.new(
+                    command,
+                    Gio.SubprocessFlags.STDOUT_PIPE | Gio.SubprocessFlags.STDERR_PIPE
+                );
+                proc.communicate_utf8_async(null, null, (proc, res) => {
+                    try{
+                        let [, stdout, stderr] = proc.communicate_utf8_finish(res);
+                        this._update();
+                    }catch(e){
+                        logError(e);
+                    }
+                });
+            }catch(e){
+                logError(e);
             }
         }
 
-        _toggleLoopback(loopback){
-            if(loopback){
-                let [res, out, err, status] = GLib.spawn_command_line_sync(
-                    `pactl load-module module-loopback latency_msec=${this._latency}`);
-                this._set_icon_indicator(true);
-                this.microphoneLoopbackSwitch.label.set_text(_('Disable microphone loopback'));
-                if(this._settings.get_boolean('notifications')){
-                    notify('Microphone Loopback',
-                           _('Microphone loopback enabled'),
-                           'microphone-loopback');
+        _update(){
+            let command;
+            command = ['pactl', 'list', 'modules', 'short'];
+            let proc = Gio.Subprocess.new(
+                command,
+                Gio.SubprocessFlags.STDOUT_PIPE | Gio.SubprocessFlags.STDERR_PIPE
+            );
+            proc.communicate_utf8_async(null, null, (proc, res) => {
+                try {
+                    let [, stdout, stderr] = proc.communicate_utf8_finish(res);
+                    let active;
+                    active = (stdout.indexOf('module-loopback') > -1);
+                    GObject.signal_handlers_block_by_func(this.microphoneLoopbackSwitch,
+                                                          this._toggleSwitch);
+                    this.microphoneLoopbackSwitch.setToggleState(active);
+                    GObject.signal_handlers_unblock_by_func(this.microphoneLoopbackSwitch,
+                                                            this._toggleSwitch);
+                    let message;
+                    this._set_icon_indicator(active);
+                    if(active){
+                        message = _('Microphone loopback enabled');
+                    }else{
+                        message = _('Microphone loopback disabled');
+                    }
+                    if(this._notifications){
+                        notify('Microphone Loopback', message);
+                    }
+                } catch (e) {
+                    logError(e);
                 }
-            }else{
-                GLib.spawn_command_line_sync("pactl unload-module module-loopback");
-                this._set_icon_indicator(true);
-                this.microphoneLoopbackSwitch.label.set_text(_('Enable microphone loopback'));
-                if(this._settings.get_boolean('notifications')){
-                    notify('Microphone Loopback',
-                           _('Microphone loopback disabled'),
-                           'microphone-loopback');
-                }
-            }
+            });
+            return true;
         }
 
         _getValue(keyName){
