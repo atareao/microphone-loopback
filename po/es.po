@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordReference Search Provider - 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 21:55+0200\n"
+"POT-Creation-Date: 2022-06-17 19:46+0200\n"
 "PO-Revision-Date: 2018-06-02 19:46+0200\n"
 "Last-Translator: Lorenzo <lorenzo.carbonell.cerezo@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -26,18 +26,10 @@ msgid "Set the latency for microphone loopback"
 msgstr "Configura la latencia para el micro"
 
 #: schemas/microphone-loopback.gschema.xml:11
-msgid "Loopback"
-msgstr "Loopback"
-
-#: schemas/microphone-loopback.gschema.xml:12
-msgid "Enable and disable the loopback for the microphone"
-msgstr "Habilita o deshabilita el loopback para el micro"
-
-#: schemas/microphone-loopback.gschema.xml:16
 msgid "Show notifications"
 msgstr "Mostrar notificaciones"
 
-#: schemas/microphone-loopback.gschema.xml:17
+#: schemas/microphone-loopback.gschema.xml:12
 msgid ""
 "On enable show notifications when enable or disable loopback for the "
 "microphone"
@@ -45,31 +37,46 @@ msgstr ""
 "Al habilitar muestra notificaciones cuando se habilita o deshabilita el "
 "loopback para el micro"
 
-#: schemas/microphone-loopback.gschema.xml:21
+#: schemas/microphone-loopback.gschema.xml:16
 msgid "Dark theme"
-msgstr ""
+msgstr "Tema oscuro"
 
-#: schemas/microphone-loopback.gschema.xml:22
+#: schemas/microphone-loopback.gschema.xml:17
 msgid "Enable dark theme otherwise light theme"
-msgstr ""
+msgstr "Habilita el tema oscuro, en otro caso, el tema claro"
 
-#: prefs.js:49
+#: dialogwidgets.js:53
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: dialogwidgets.js:54
+msgid "Ok"
+msgstr "Aceptar"
+
+#: prefs.js:50
 msgid "Indicator options"
-msgstr ""
+msgstr "Opciones"
 
-#: prefs.js:54
+#: prefs.js:56
+msgid "Theme"
+msgstr "Tema"
+
+#: prefs.js:59
 #, fuzzy
-msgid "Microphone Loobak Preferences"
-msgstr "Loopback habilitado"
+msgid "Microphone Loopbak Preferences"
+msgstr "Preferencias del micrófono loopback"
 
-#: prefs.js:57
+#: prefs.js:62
+msgid "Style"
+msgstr "Estilo"
+
+#: prefs.js:63
 msgid "About"
 msgstr "Acerca de..."
 
-#: prefs.js:66
-#, fuzzy
+#: prefs.js:72
 msgid "Microphone Loopback Configuration"
-msgstr "Loopback habilitado"
+msgstr "Configuración del loopback del micrófono"
 
 #: preferenceswidget.js:248
 msgid "Nothing"
@@ -85,143 +92,100 @@ msgstr "Falso"
 
 #: preferenceswidget.js:468 preferenceswidget.js:999
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: preferenceswidget.js:515 preferenceswidget.js:533 preferenceswidget.js:562
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: preferenceswidget.js:521 preferenceswidget.js:533 preferenceswidget.js:562
 msgid "Service"
-msgstr ""
+msgstr "Servicio"
 
 #: preferenceswidget.js:1009
 msgid "Remove"
-msgstr ""
+msgstr "Eliminar"
 
-#: extension.js:62
-#, fuzzy
+#: aboutpage.js:45
+msgid "Buy me a coffee"
+msgstr "Invítame a un café"
+
+#: aboutpage.js:51
+msgid "Version"
+msgstr "Versión"
+
+#: aboutpage.js:53
+msgid "GNOME Version"
+msgstr "Versión de GNOME"
+
+#: aboutpage.js:56
+msgid "OS"
+msgstr "OS"
+
+#: aboutpage.js:58
+msgid "SessionType"
+msgstr "Tipo de sesión"
+
+#: aboutpage.js:90
+msgid "Developers"
+msgstr "Desarrolladores"
+
+#: aboutpage.js:97
+msgid "Contributors"
+msgstr "Contribuidores"
+
+#: aboutpage.js:98
+msgid "Thank you to all contributors!"
+msgstr "Gracias a todos los que haceís esto posible"
+
+#: aboutpage.js:99
+msgid "For a list of all contributors, please visit"
+msgstr "Para ver todos los contribuidores, visita"
+
+#: aboutpage.js:108
+msgid "Supporters"
+msgstr "Patrocinadores"
+
+#: aboutpage.js:109
+msgid "Thank you to all supporters!"
+msgstr "Gracias a todos los patrocinadores"
+
+#: aboutpage.js:110
+msgid "For a list of all supporters, please visit"
+msgstr "Para una lita de todos los patrocinadores, visita"
+
+#: aboutpage.js:117
+msgid "License"
+msgstr "Licencia"
+
+#: aboutpage.js:130
+msgid "More info"
+msgstr "Más información"
+
+#: aboutpage.js:140
+msgid "More information"
+msgstr "Mas información"
+
+#: aboutpage.js:143
+msgid "Report an issue"
+msgstr "Informa de un error..."
+
+#: extension.js:61
 msgid "Microphone status"
-msgstr "Loopback del micrófono"
+msgstr "Estado del micrófono"
 
-#: extension.js:64 extension.js:114
+#: extension.js:63
 msgid "Enable microphone loopback"
 msgstr "Habilita el loopback"
 
-#: extension.js:73
+#: extension.js:72
 msgid "Settings"
 msgstr "Configuración"
 
-#: extension.js:105
-msgid "Disable microphone loopback"
-msgstr "Deshabilita el loopback"
-
-#: extension.js:108
+#: extension.js:137
 msgid "Microphone loopback enabled"
 msgstr "Loopback habilitado"
 
-#: extension.js:117
+#: extension.js:139
 msgid "Microphone loopback disabled"
 msgstr "Loopback deshabilitado"
-
-#~ msgid "Help"
-#~ msgstr "Ayuda"
-
-#~ msgid "Project Page"
-#~ msgstr "Página del proyecto"
-
-#~ msgid "Get help online..."
-#~ msgstr "Ayuda en línea..."
-
-#~ msgid "Report a bug..."
-#~ msgstr "Informa de un error..."
-
-#~ msgid "El atareao"
-#~ msgstr "El atareao"
-
-#~ msgid "Follow me in Twitter"
-#~ msgstr "Sígueme en Twitter"
-
-#~ msgid "Follow me in Facebook"
-#~ msgstr "Sígueme en Facebook"
-
-#~ msgid "Follow me in Google+"
-#~ msgstr "Sígueme en Google+"
-
-#~ msgid "Version: "
-#~ msgstr "Versión: "
-
-#~ msgid "Atareao"
-#~ msgstr "Atareao"
-
-#~ msgid "Copyright © 2018 Lorenzo Carbonell"
-#~ msgstr "Copyright © 2018 Lorenzo Carbonell"
-
-#~ msgid "This program is free software: you can redistribute it and/or modify"
-#~ msgstr ""
-#~ "Este programa es software libre: puede redistribuirlo y/o modificarlo"
-
-#~ msgid "it under the terms of the GNU General Public License as published by"
-#~ msgstr ""
-#~ "bajo los términos de la Licencia General Pública de GNU publicada por la"
-
-#~ msgid "the Free Software Foundation, either version 3 of the License, or"
-#~ msgstr "Free Software Foundation, ya sea la versión 3 de la Licencia, o"
-
-#~ msgid "(at your option) any later version."
-#~ msgstr "(a su elección) cualquier versión posterior."
-
-#~ msgid "This program is distributed in the hope that it will be useful,"
-#~ msgstr "Este programa se distribuye con la esperanza de que sea útil,"
-
-#~ msgid "but WITHOUT ANY WARRANTY; without even the implied warranty of"
-#~ msgstr "pero SIN NINGUNA GARANTÍA; incluso sin la garantía implícita de"
-
-#~ msgid "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
-#~ msgstr ""
-#~ "MERCANTIBILIDAD o CALIFICADA PARA UN PROPÓSITO EN PARTICULAR. Vea la"
-
-#~ msgid "GNU General Public License for more details."
-#~ msgstr "Licencia General Pública de GNU para más detalles."
-
-#~ msgid "You should have received a copy of the GNU General Public License"
-#~ msgstr ""
-#~ "Usted ha debido de recibir una copia de la Licencia General Pública de GNU"
-
-#~ msgid ""
-#~ "along with this program.  If not, see <a href=\"https://www.gnu.org/"
-#~ "licenses/\">https://www.gnu.org/licenses/</a>."
-#~ msgstr ""
-#~ "junto con este programa. Si no, vea <a href=\"https://www.gnu.org/"
-#~ "licenses/\">https://www.gnu.org/licenses/</a>."
-
-#~ msgid "Preferences"
-#~ msgstr "Preferencias"
-
-#~ msgid "Select latency"
-#~ msgstr "Elige la latencia"
-
-#~ msgid "Translate this application..."
-#~ msgstr "Traduce la aplicación..."
-
-#~ msgid "Dictionary"
-#~ msgstr "Diccionario"
-
-#~ msgid "Synonyms"
-#~ msgstr "Sinónimos"
-
-#~ msgid "WordReference"
-#~ msgstr "WordReference"
-
-#~ msgid "Loading items from WordReference, please wait..."
-#~ msgstr "Cargando definiciones de WordReference, por favor espera..."
-
-#~ msgid "Oops, an error occurred while searching."
-#~ msgstr "Ups!, ha sucedido un error..."
-
-#, fuzzy
-#~ msgid "WordReference Search Provider"
-#~ msgstr "WordReference Search Provider"
-
-#~ msgid "Select dictionaries"
-#~ msgstr "Elige diccionarios"
