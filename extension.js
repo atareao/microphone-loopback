@@ -49,13 +49,12 @@ function notify(msg, details, icon='microphone-loopback') {
 var MicrophoneLoopback = GObject.registerClass(
     class MicrophoneLoopback extends PanelMenu.Button{
         _init(){
+            super._init(St.Align.START);
             this._settings = ExtensionUtils.getSettings();
-            this._loadPreferences();
 
             /* Icon indicator */
             let box = new St.BoxLayout();
-            this.icon = new St.Icon({icon_name: 'mic-off',
-                                     style_class: 'system-status-icon'});
+            this.icon = new St.Icon({style_class: 'system-status-icon'});
             box.add(this.icon);
             this.add_child(box);
 
