@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordReference Search Provider - 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 06:53+0200\n"
+"POT-Creation-Date: 2022-06-18 09:56+0200\n"
 "PO-Revision-Date: 2018-06-02 19:46+0200\n"
 "Last-Translator: Lorenzo <lorenzo.carbonell.cerezo@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: schemas/es.atareao.microphone-looback.gschema.xml:6
+#: schemas/org.gnome.shell.extensions.microphone-loopback.gschema.xml:6
 msgid "Latency in milliseconds"
 msgstr "Latencia en milisegundos"
 
-#: schemas/es.atareao.microphone-looback.gschema.xml:7
+#: schemas/org.gnome.shell.extensions.microphone-loopback.gschema.xml:7
 msgid "Set the latency for microphone loopback"
 msgstr "Configura la latencia para el micro"
 
-#: schemas/es.atareao.microphone-looback.gschema.xml:11
+#: schemas/org.gnome.shell.extensions.microphone-loopback.gschema.xml:11
 msgid "Show notifications"
 msgstr "Mostrar notificaciones"
 
-#: schemas/es.atareao.microphone-looback.gschema.xml:12
+#: schemas/org.gnome.shell.extensions.microphone-loopback.gschema.xml:12
 msgid ""
 "On enable show notifications when enable or disable loopback for the "
 "microphone"
@@ -37,11 +37,11 @@ msgstr ""
 "Al habilitar muestra notificaciones cuando se habilita o deshabilita el "
 "loopback para el micro"
 
-#: schemas/es.atareao.microphone-looback.gschema.xml:16
+#: schemas/org.gnome.shell.extensions.microphone-loopback.gschema.xml:16
 msgid "Dark theme"
 msgstr "Tema oscuro"
 
-#: schemas/es.atareao.microphone-looback.gschema.xml:17
+#: schemas/org.gnome.shell.extensions.microphone-loopback.gschema.xml:17
 msgid "Enable dark theme otherwise light theme"
 msgstr "Habilita el tema oscuro, en otro caso, el tema claro"
 

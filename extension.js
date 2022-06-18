@@ -164,8 +164,9 @@ var MicrophoneLoopback = GObject.registerClass(
             return Gio.icon_new_for_string(fileIcon.get_path());
         }
 
-        disable() {
+        destroy() {
             this._settings.disconnect(this._settingsChanged);
+            super.destroy();
         }
     }
 );
@@ -182,6 +183,6 @@ function enable(){
 }
 
 function disable() {
-    microphoneLoopback.disable();
+    microphoneLoopback.destroy();
     microphoneLoopback = null;
 }
