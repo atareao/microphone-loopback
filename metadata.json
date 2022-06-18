@@ -12,5 +12,5 @@
     "gettext-domain": "microphone-loopback@atareao.es",
     "settings-schema": "org.gnome.shell.extensions.microphone-loopback",
     "icon": "microphone-loopback",
-    "version": 4
+    "version": 5
 }
