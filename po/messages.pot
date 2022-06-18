@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-17 19:47+0200\n"
+"POT-Creation-Date: 2022-06-18 06:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,29 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: schemas/microphone-loopback.gschema.xml:6
+#: schemas/es.atareao.microphone-looback.gschema.xml:6
 msgid "Latency in milliseconds"
 msgstr ""
 
-#: schemas/microphone-loopback.gschema.xml:7
+#: schemas/es.atareao.microphone-looback.gschema.xml:7
 msgid "Set the latency for microphone loopback"
 msgstr ""
 
-#: schemas/microphone-loopback.gschema.xml:11
+#: schemas/es.atareao.microphone-looback.gschema.xml:11
 msgid "Show notifications"
 msgstr ""
 
-#: schemas/microphone-loopback.gschema.xml:12
+#: schemas/es.atareao.microphone-looback.gschema.xml:12
 msgid ""
 "On enable show notifications when enable or disable loopback for the "
 "microphone"
 msgstr ""
 
-#: schemas/microphone-loopback.gschema.xml:16
+#: schemas/es.atareao.microphone-looback.gschema.xml:16
 msgid "Dark theme"
 msgstr ""
 
-#: schemas/microphone-loopback.gschema.xml:17
+#: schemas/es.atareao.microphone-looback.gschema.xml:17
 msgid "Enable dark theme otherwise light theme"
 msgstr ""
 
@@ -167,22 +167,22 @@ msgstr ""
 msgid "Report an issue"
 msgstr ""
 
-#: extension.js:61
+#: extension.js:52
 msgid "Microphone status"
 msgstr ""
 
-#: extension.js:63
+#: extension.js:54
 msgid "Enable microphone loopback"
 msgstr ""
 
-#: extension.js:72
+#: extension.js:63
 msgid "Settings"
 msgstr ""
 
-#: extension.js:137
+#: extension.js:128
 msgid "Microphone loopback enabled"
 msgstr ""
 
-#: extension.js:139
+#: extension.js:130
 msgid "Microphone loopback disabled"
 msgstr ""
