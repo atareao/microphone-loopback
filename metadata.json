@@ -2,14 +2,13 @@
     "name": "Microphone Loopback",
     "description": "This extension enables hear microphone on headphones or speakers",
     "shell-version": [
-        "3.26",
-        "3.28",
         "40",
         "41",
         "42"
     ],
     "url": "https://github.com/atareao/microphone-loopback",
     "uuid": "microphone-loopback@atareao.es",
+    "extension-id": "microphone-loopback@atareao.es",
     "gettext-domain": "microphone-loopback@atareao.es",
     "settings-schema": "es.atareao.microphone-loopback",
     "icon": "microphone-loopback",

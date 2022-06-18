@@ -36,15 +36,6 @@ const Extension = ExtensionUtils.getCurrentExtension();
 const Gettext = imports.gettext.domain(Extension.uuid);
 const _ = Gettext.gettext;
 
-var button;
-
-function notify(msg, details) {
-    let source = new MessageTray.Source(Extension.uuid, 'help-info-symbolic');
-    Main.messageTray.add(source);
-    let notification = new MessageTray.Notification(source, msg, details);
-    notification.setTransient(true);
-    source.showNotification(notification);
-}
 
 var MicrophoneLoopback = GObject.registerClass(
     class MicrophoneLoopback extends PanelMenu.Button{
@@ -139,7 +130,7 @@ var MicrophoneLoopback = GObject.registerClass(
                         message = _('Microphone loopback disabled');
                     }
                     if(this._notifications){
-                        notify('Microphone Loopback', message);
+                        Main.notify('Microphone Loopback', message);
                     }
                 } catch (e) {
                     logError(e);
