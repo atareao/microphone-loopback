@@ -59,20 +59,13 @@ var AboutPage = GObject.registerClass(
             return info;
         }
         _getInfoNotebook(){
-            const infoScrolledWindow = new Gtk.ScrolledWindow({
-                marginTop: 10,
-                maxContentHeight: 200,
-                minContentHeight: 200,
-                vexpand: false,
-            });
             const notebook = new Widgets.Notebook();
-            infoScrolledWindow.set_child(notebook);
             notebook.append_page(this._getDevelopersPage());
             notebook.append_page(this._getContributorsPage());
             notebook.append_page(this._getSupportersPage());
             notebook.append_page(this._getLicensePage());
             notebook.append_page(this._getDoing());
-            return infoScrolledWindow;
+            return notebook;
         }
         _getNotebookPage(title, content){
             const page = new Widgets.NotebookPage(title);
